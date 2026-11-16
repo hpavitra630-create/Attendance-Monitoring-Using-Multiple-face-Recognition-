@@ -1,0 +1,59 @@
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.so
+*.dylib
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# ── Environment / Secrets ────────────────────────────────────────────────────
+.env
+*.env
+!.env.example
+
+# ── Database files ───────────────────────────────────────────────────────────
+backend/database/*.db
+backend/database/*.sqlite
+backend/database/*.db-shm
+backend/database/*.db-wal
+# Test DB
+backend/tests/test_attendance_temp.db
+backend/test_attendance.db
+
+# ── Face encodings & student uploads (large binary blobs) ────────────────────
+backend/face_encodings/
+backend/uploads/
+ISE-STUDENT-PHOTOS/
+ISE-STUDENT-PHOTOS.zip
+student_registration_log.json
+
+# ── Backup files ─────────────────────────────────────────────────────────────
+backend/backups/
+backend/reports/
+
+# ── Node / Frontend ──────────────────────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# ── IDE / OS ──────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+*.log.*
